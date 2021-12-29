@@ -1,10 +1,5 @@
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './header.scss'
-
-// interface Props {
-//   page: Pages,
-//   setPage: (page: Pages) => void
-// }
 
 export const Header: React.FC = () => (
   <header className="header">
@@ -83,6 +78,17 @@ export const Header: React.FC = () => (
           </NavLink>
         </li>
       </ul>
+
+      <div className="header__icons">
+        <Link
+          className='header__icon header__icon--search'
+          to='/'
+        />
+        <Link
+          className='header__icon header__icon--user'
+          to='/'
+        />
+      </div>
     </nav>
   </header>
 )
