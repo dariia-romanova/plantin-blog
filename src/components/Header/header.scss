@@ -1,0 +1,26 @@
+$c-dark-gray: #262626;
+$c-main: #04BF94;
+
+$tansition-speed: 0.25s;
+
+.header {
+  &__actions {
+    display: flex;
+    gap: 24px;
+    font-weight: 500;
+  }
+
+  &__link {
+    color: $c-dark-gray;
+
+    transition: color $tansition-speed;
+
+    &--active {
+      color: $c-main;
+    }
+
+    &:hover {
+      color: $c-main;
+    }
+  }
+}
