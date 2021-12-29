@@ -1,0 +1,20 @@
+@mixin container {
+  width: 1074px;
+  margin: 0 auto;
+}
+
+
+.insteresting-posts {
+  &__list {
+    @include container;
+
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  &__post {
+    width: 337px;
+  }
+}

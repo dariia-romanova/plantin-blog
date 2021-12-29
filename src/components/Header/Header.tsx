@@ -7,7 +7,7 @@ export const Header: React.FC = () => (
       <ul className="header__actions">
         <li>
           <NavLink
-            to='/discover'
+            to='./plantin-blog/discover'
             className={({ isActive }) => (
               isActive
                 ? 'header__link header__link--active'
@@ -19,7 +19,7 @@ export const Header: React.FC = () => (
         </li>
         <li>
           <NavLink
-            to='/my_plants'
+            to='./plantin-blog/my_plants'
             className={({ isActive }) => (
               isActive
                 ? 'header__link header__link--active'
@@ -31,7 +31,7 @@ export const Header: React.FC = () => (
         </li>
         <li>
           <NavLink
-            to='/diseases'
+            to='./plantin-blog/diseases'
             className={({ isActive }) => (
               isActive
                 ? 'header__link header__link--active'
@@ -43,7 +43,7 @@ export const Header: React.FC = () => (
         </li>
         <li>
           <NavLink
-            to='/blog'
+            to='./plantin-blog/blog'
             className={({ isActive }) => (
               isActive
                 ? 'header__link header__link--active'
@@ -55,7 +55,7 @@ export const Header: React.FC = () => (
         </li>
         <li>
           <NavLink
-            to='/faq'
+            to='./plantin-blog/faq'
             className={({ isActive }) => (
               isActive
                 ? 'header__link header__link--active'
@@ -67,7 +67,7 @@ export const Header: React.FC = () => (
         </li>
         <li>
           <NavLink
-            to='/contact_us'
+            to='./plantin-blog/contact_us'
             className={({ isActive }) => (
               isActive
                 ? 'header__link header__link--active'

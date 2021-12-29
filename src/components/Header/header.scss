@@ -1,7 +1,6 @@
 $c-dark-gray: #262626;
 $c-main: #04BF94;
 $c-white: #fff;
-
 $tansition-speed: 0.25s;
 
 @mixin container {
@@ -16,6 +15,7 @@ $tansition-speed: 0.25s;
   &__navigation {
     display: flex;
     align-items: center;
+    margin-bottom: 60px;
   }
 
   &__actions {
