@@ -1,0 +1,22 @@
+$c-main: #04BF94;
+
+@mixin container {
+  width: 1074px;
+  margin: 0 auto;
+}
+
+.title-section {
+  &__content {
+    padding: 56px;
+    background-color: #04BF9429;
+    @include container;
+  }
+
+  &__title {
+    color: $c-main;
+  }
+
+  &__temperature {
+
+  }
+}
