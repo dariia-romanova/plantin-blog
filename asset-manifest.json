@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/plantin-blog/static/css/main.b98406ab.css",
-    "main.js": "/plantin-blog/static/js/main.2aba0997.js",
+    "main.css": "/plantin-blog/static/css/main.0a726298.css",
+    "main.js": "/plantin-blog/static/js/main.2bebb8dc.js",
+    "static/media/user.svg": "/plantin-blog/static/media/user.1ede28b5846a14689aee.svg",
     "index.html": "/plantin-blog/index.html",
-    "main.b98406ab.css.map": "/plantin-blog/static/css/main.b98406ab.css.map",
-    "main.2aba0997.js.map": "/plantin-blog/static/js/main.2aba0997.js.map"
+    "static/media/search.svg": "/plantin-blog/static/media/search.ebbe1d1fd00829ebb158.svg",
+    "main.0a726298.css.map": "/plantin-blog/static/css/main.0a726298.css.map",
+    "main.2bebb8dc.js.map": "/plantin-blog/static/js/main.2bebb8dc.js.map"
   },
   "entrypoints": [
-    "static/css/main.b98406ab.css",
-    "static/js/main.2aba0997.js"
+    "static/css/main.0a726298.css",
+    "static/js/main.2bebb8dc.js"
   ]
 }
