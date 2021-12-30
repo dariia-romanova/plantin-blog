@@ -9,9 +9,8 @@
   }
   &__content {
     padding: 56px;
-    background: right bottom no-repeat #04BF9429 url("../img/title-image.png");
+    background: right bottom no-repeat $c-green-transparent url("../img/title-image.png");
     border-radius: 16px;
-    box-sizing: border-box;
 
     @include onMobile {
       padding: 16px;

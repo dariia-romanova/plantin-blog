@@ -45,7 +45,9 @@ export const PostsInteresting: React.FC<Props> = ({ searchQuery }) => {
   return (
     <section className="insteresting-posts">
       <div className="insteresting-posts__content">
-        <h3 className="insteresting-posts__title">Interesting</h3>
+        {!searchQuery && (
+          <h3 className="insteresting-posts__title">Interesting</h3>
+        )}
         <InfiniteScroll
           dataLength={posts.length}
           next={fetchData}
@@ -65,6 +67,7 @@ export const PostsInteresting: React.FC<Props> = ({ searchQuery }) => {
                     title={title}
                     text={text}
                     isHorizontal={false}
+
                   />
                 </li>
               ))}

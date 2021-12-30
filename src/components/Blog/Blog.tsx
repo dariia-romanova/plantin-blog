@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { TitleSection } from '../TitleSection/TitleSection';
 import { PostsInteresting } from '../PostsInteresting';
-import { Breadcrumbs } from '../../Breadcrumbs/Breadcrumbs';
+import { Breadcrumbs } from '../Breadcrumbs'
 import { PostsTop } from '../PostsTop';
 import { PostsNew } from '../PostsNew';
 import { Footer } from '../Footer';
+import { Banner } from '../Banner';
 
 export const Blog: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -28,6 +29,8 @@ export const Blog: React.FC = () => {
           <PostsTop />
         </>
       )}
+
+      <Banner />
 
       <PostsInteresting
         searchQuery={searchQuery}

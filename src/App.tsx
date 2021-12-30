@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import { Blog } from './components/Blog';
 import { Header } from './components/Header';
-import { Breadcrumbs } from './Breadcrumbs/Breadcrumbs';
+import { Breadcrumbs } from './components/Breadcrumbs';
 
 function App() {
   return (

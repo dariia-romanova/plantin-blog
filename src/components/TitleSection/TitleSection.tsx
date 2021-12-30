@@ -25,7 +25,6 @@ export const TitleSection: React.FC<Props> = ({searchQuery, changeSearchQuery })
     getGeolocation();
   },[])
 
-
   return (
     <section className="title-section">
       <div className="title-section__wrapper">
