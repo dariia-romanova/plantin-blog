@@ -2,20 +2,30 @@
   &__content {
     &:hover {
       .post__title {
-        color: $c-medium-gray;
+        color: $c-main;
+      }
+    }
 
+    &--horizontal {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 30px;
+
+      @include onMobile {
+        display: block;
       }
     }
   }
+
   &__image {
     width: 100%;
     overflow: hidden;
     margin-bottom: 16px;
+    border-radius: 12px;
 
     @include onMobile {
       object-fit: cover;
       height: 240px;
-      border-radius: 12px;
     }
   }
 
@@ -31,6 +41,21 @@
     font-weight: 700;
 
     transition: color $tansition-speed;
+
+    &--horizontal {
+      font-size: 48px;
+      line-height: 72px;
+
+      @include onTablet {
+        font-size: 36px;
+        line-height: 48px;
+      }
+
+      @include onMobile {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
   }
 
   &__text {

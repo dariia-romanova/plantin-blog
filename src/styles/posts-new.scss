@@ -1,0 +1,23 @@
+.posts-new {
+  &__content {
+    @include container;
+    
+    margin-bottom: 16px;
+    padding-bottom: 56px;
+    border-bottom: 1px solid #C4C4C4;
+  }
+
+  &__tag {
+    width: 78px;
+    height: 36px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: no-repeat url('../img/new-tag.svg');
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

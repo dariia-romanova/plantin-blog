@@ -57,7 +57,7 @@ export const postsFromServer = [
   },
   {
     id: 8,
-    photoId: 3,
+    photoId: 6,
     date: 'Feb 23',
     minRead: 8,
     title: 'Tips & Tricks For Cutting',
@@ -81,7 +81,7 @@ export const postsFromServer = [
   },
   {
     id: 11,
-    photoId: 6,
+    photoId: 3,
     date: 'Feb 23',
     minRead: 8,
     title: 'Watering mastery',
@@ -89,7 +89,7 @@ export const postsFromServer = [
   },
   {
     id: 12,
-    photoId: 2,
+    photoId: 4,
     date: 'Feb 23',
     minRead: 8,
     title: 'Plant pot secrets',

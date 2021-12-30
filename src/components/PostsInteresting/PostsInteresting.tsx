@@ -14,7 +14,6 @@ export const PostsInteresting: React.FC<Props> = ({ searchQuery }) => {
   const [pagesLoad, setPagesLoad] = useState(12);
 
   useEffect(() => {
-    console.log('heelo')
     const visible = posts.filter(post => {
       const text = post.text.toLowerCase();
       const title = post.title.toLowerCase();
@@ -64,6 +63,7 @@ export const PostsInteresting: React.FC<Props> = ({ searchQuery }) => {
                     photoId={photoId}
                     title={title}
                     text={text}
+                    isHorizontal={false}
                   />
                 </li>
               ))}

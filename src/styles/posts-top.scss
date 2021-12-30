@@ -1,4 +1,4 @@
-.insteresting-posts {
+.posts-top {
   &__content {
     @include container;
   }
@@ -16,21 +16,21 @@
   }
 
   &__list {
+    margin-bottom: 16px;
+    padding-bottom: 56px;
+    border-bottom: 1px solid #C4C4C4;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
-
-    @include onTablet {
-      grid-template-columns: repeat(2, 1fr);
-    }
 
     @include onMobile {
       grid-template-columns: repeat(1, 1fr);
     }
   }
 
-  &__post {
-    width: 100%;
-    margin-bottom: 56px;
+  &__post:not(:last-child) {
+    @include onMobile {
+      margin-bottom: 56px;
+    }
   }
 }
