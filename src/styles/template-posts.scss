@@ -1,0 +1,47 @@
+.template-posts {
+  &__list {
+    @include container;
+
+    margin-bottom: 56px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+
+    @include onTablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include onMobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__block {
+    margin-bottom: 20px;
+    background-color: $c-extra-light-gray;
+    border-radius: 12px;
+    height: 20px;
+
+    &--img {
+      height: 240px;
+    }
+
+    &--string-1 {
+      width: 50%;
+      height: 12px;
+      border-radius: 4px;
+    }
+
+    &--string-2 {
+      width: 75%;
+      height: 24px;
+      margin-bottom: 8px;
+      border-radius: 4px;
+    }
+
+    &--string-3 {
+      height: 78px;
+      border-radius: 4px;
+    }
+  }
+}

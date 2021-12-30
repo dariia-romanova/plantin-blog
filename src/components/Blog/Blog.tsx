@@ -4,6 +4,7 @@ import { PostsInteresting } from '../PostsInteresting';
 import { Breadcrumbs } from '../../Breadcrumbs/Breadcrumbs';
 import { PostsTop } from '../PostsTop';
 import { PostsNew } from '../PostsNew';
+import { Footer } from '../Footer';
 
 export const Blog: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -31,6 +32,8 @@ export const Blog: React.FC = () => {
       <PostsInteresting
         searchQuery={searchQuery}
       />
+
+      <Footer />
     </>
   )
 };

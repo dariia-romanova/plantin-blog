@@ -3,6 +3,7 @@ import { postsFromServer } from '../../api/posts'
 import { Post } from '../Post/Post';
 import InfiniteScroll from "react-infinite-scroll-component";
 import { useEffect } from 'react';
+import { TemplatePosts } from '../TampatePosts';
 
 interface Props {
   searchQuery: string;
@@ -49,7 +50,7 @@ export const PostsInteresting: React.FC<Props> = ({ searchQuery }) => {
           dataLength={posts.length}
           next={fetchData}
           hasMore={true}
-          loader={<h4>Loading..</h4>}
+          loader={<TemplatePosts />}
           endMessage={''}
         >
           {
@@ -69,7 +70,9 @@ export const PostsInteresting: React.FC<Props> = ({ searchQuery }) => {
               ))}
             </ul>
             ) : (
-              <p>No articles found</p>
+              <p className="insteresting-posts__message">
+                Nothing was found
+              </p>
             )
           }
 

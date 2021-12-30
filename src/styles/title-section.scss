@@ -61,7 +61,6 @@
   &__search-field {
     width: 520px;
     padding: 16px;
-
     border-radius: 12px;
     background: right 16px  center no-repeat #fff url('../img/search.svg');
     box-shadow: 0px 0.470434px 2.21381px rgba(0, 0, 0, 0.0196802);
@@ -76,6 +75,7 @@
     }
 
     @include onMobile {
+      width: 100%;
       padding: 10px 16px;
     }
 
