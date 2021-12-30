@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/plantin-blog/static/css/main.8a8cfeb0.css",
-    "main.js": "/plantin-blog/static/js/main.833c05e2.js",
+    "main.css": "/plantin-blog/static/css/main.33d15037.css",
+    "main.js": "/plantin-blog/static/js/main.f72ec1da.js",
     "static/media/article-img-5.png": "/plantin-blog/static/media/article-img-5.b45a2fce262c5efdd8a7.png",
     "static/media/article-img-1.png": "/plantin-blog/static/media/article-img-1.3417fa5c4a306df7365f.png",
     "static/media/article-img-6.png": "/plantin-blog/static/media/article-img-6.5c3b871be6c5225287bf.png",
@@ -12,13 +12,14 @@
     "static/media/user.svg": "/plantin-blog/static/media/user.1ede28b5846a14689aee.svg",
     "index.html": "/plantin-blog/index.html",
     "static/media/menu.svg": "/plantin-blog/static/media/menu.32a4a73131a0a1381dde.svg",
+    "static/media/new-tag.svg": "/plantin-blog/static/media/new-tag.c90ecac4462bd8e63f8b.svg",
     "static/media/search.svg": "/plantin-blog/static/media/search.ebbe1d1fd00829ebb158.svg",
     "static/media/breadcrumbs.svg": "/plantin-blog/static/media/breadcrumbs.c298227059fa0259e6e3.svg",
-    "main.8a8cfeb0.css.map": "/plantin-blog/static/css/main.8a8cfeb0.css.map",
-    "main.833c05e2.js.map": "/plantin-blog/static/js/main.833c05e2.js.map"
+    "main.33d15037.css.map": "/plantin-blog/static/css/main.33d15037.css.map",
+    "main.f72ec1da.js.map": "/plantin-blog/static/js/main.f72ec1da.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a8cfeb0.css",
-    "static/js/main.833c05e2.js"
+    "static/css/main.33d15037.css",
+    "static/js/main.f72ec1da.js"
   ]
 }
