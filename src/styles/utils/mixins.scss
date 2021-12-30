@@ -1,0 +1,29 @@
+@mixin container {
+  width: 1074px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include onTablet {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @include onMobile {
+    max-width: 706px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@mixin onTablet {
+  @media (max-width: 1120px) {
+    @content;
+  }
+}
+
+@mixin onMobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}

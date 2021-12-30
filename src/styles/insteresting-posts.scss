@@ -1,0 +1,36 @@
+.insteresting-posts {
+  &__content {
+    @include container;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    color: $c-gray;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+
+    @include onMobile {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    flex-wrap: wrap;
+
+    @include onTablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include onMobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__posts {
+    width: 100%;
+  }
+}

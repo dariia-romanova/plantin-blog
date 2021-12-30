@@ -1,0 +1,28 @@
+.breadcrumbs {
+  &__list {
+    @include container;
+
+    margin-bottom: 48px;
+    display: flex;
+    gap: 8px;
+    align-content: center;
+  }
+
+  &__item {
+    display: flex;
+    gap: 8px;
+    color: $c-gray;
+
+    &:after {
+      content:"";
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/breadcrumbs.svg);
+    }
+  }
+
+  &__link {
+    color: $c-gray;
+  }
+}

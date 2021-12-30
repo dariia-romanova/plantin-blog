@@ -1,0 +1,39 @@
+.post {
+  &__content {
+    &:hover {
+      .post__title {
+        color: $c-medium-gray;
+
+      }
+    }
+  }
+  &__image {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 16px;
+
+    @include onMobile {
+      object-fit: cover;
+      height: 240px;
+      border-radius: 12px;
+    }
+  }
+
+  &__info {
+    color: $c-light-gray;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    color: $c-dark-gray;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+
+    transition: color $tansition-speed;
+  }
+
+  &__text {
+    color: $c-medium-gray;
+  }
+}

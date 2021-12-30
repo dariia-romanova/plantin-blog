@@ -1,0 +1,17 @@
+@import './reset.scss';
+@import './utils/mixins.scss';
+@import './utils/variables.scss';
+
+@import './header.scss';
+@import './insteresting-posts.scss';
+@import './title-section.scss';
+@import './post.scss';
+@import './breadcrumbs.scss';
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: $c-background;
+}
+

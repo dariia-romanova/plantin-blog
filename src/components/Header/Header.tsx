@@ -1,9 +1,10 @@
-import { Link, NavLink } from 'react-router-dom'
-import './header.scss'
+import logo from '../../img/logo.png'
 
+import { Link, NavLink } from 'react-router-dom'
 export const Header: React.FC = () => (
   <header className="header">
     <nav className="header__navigation">
+      <img src={logo} alt="logo" className="header__logo" />
       <ul className="header__actions">
         <li>
           <NavLink
@@ -88,7 +89,11 @@ export const Header: React.FC = () => (
           className='header__icon header__icon--user'
           to='/'
         />
+        <Link
+          className='header__icon header__icon--menu'
+          to='/'
+        />
       </div>
     </nav>
   </header>
-)
+);
