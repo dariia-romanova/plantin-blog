@@ -1,6 +1,6 @@
 # PlantIn Blog page
 
-[DEMO LINK](https://dariia-romanova.github.io/plantin-blog/blog)
+[DEMO LINK](https://dariia-romanova.github.io/plantin-blog/)
 
 TECHSTACK: React/Typescript/HTML/CSS(SCSS)
 
