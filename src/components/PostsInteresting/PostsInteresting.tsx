@@ -4,6 +4,7 @@ import { Post } from '../Post/Post';
 import InfiniteScroll from "react-infinite-scroll-component";
 import { useEffect } from 'react';
 import { TemplatePosts } from '../TampatePosts';
+import { Banner } from '../Banner';
 
 interface Props {
   searchQuery: string;
@@ -54,23 +55,32 @@ export const PostsInteresting: React.FC<Props> = ({ searchQuery }) => {
           hasMore={true}
           loader={<TemplatePosts />}
           endMessage={''}
+          style={{ overflow: 'visible' }}
         >
           {
             visiblePosts.length ? (
               <ul className="insteresting-posts__list">
-              {visiblePosts.map(({ id, photoId, title, minRead, date, text }) => (
-                <li key={id} className="insteresting-posts__post">
-                  <Post
-                    minRead={minRead}
-                    date={date}
-                    photoId={photoId}
-                    title={title}
-                    text={text}
-                    isHorizontal={false}
+              {visiblePosts.map(({ id, photoId, title, minRead, date, text }, index) => {
+                return (
+                  <>
+                    <li key={id} className="insteresting-posts__post">
+                    <Post
+                      minRead={minRead}
+                      date={date}
+                      photoId={photoId}
+                      title={title}
+                      text={text}
+                      isHorizontal={false}
 
-                  />
-                </li>
-              ))}
+                    />
+                  </li>
+                  {(index + 7) % 12 === 0 &&  (
+                    <li className="insteresting-posts__post--banner">
+                      <Banner />
+                    </li>
+                  )}
+                </>
+              )})}
             </ul>
             ) : (
               <p className="insteresting-posts__message">
