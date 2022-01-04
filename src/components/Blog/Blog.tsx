@@ -5,6 +5,7 @@ import { Breadcrumbs } from '../Breadcrumbs'
 import { PostsTop } from '../PostsTop';
 import { PostsNew } from '../PostsNew';
 import { Footer } from '../Footer';
+import { useRef } from 'react';
 
 export const Blog: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState<string>('');

@@ -55,6 +55,7 @@ export const TitleSection: React.FC<Props> = ({searchQuery, changeSearchQuery })
             onSubmit={(event) => event.preventDefault()}
           >
             <input
+              id="search"
               className="title-section__search-field"
               type="text"
               value={searchQuery}

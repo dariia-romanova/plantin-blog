@@ -1,6 +1,6 @@
 import logo from '../../img/logo.png'
-
 import { Link, NavLink } from 'react-router-dom'
+
 export const Header: React.FC = () => (
   <header className="header">
     <nav className="header__navigation">
@@ -81,9 +81,9 @@ export const Header: React.FC = () => (
       </ul>
 
       <div className="header__icons">
-        <Link
+        <a
           className='header__icon header__icon--search'
-          to='/'
+          href="#search"
         />
         <div
           className='header__icon header__icon--user'
