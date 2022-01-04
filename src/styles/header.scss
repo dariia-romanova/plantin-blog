@@ -75,6 +75,13 @@
     height: 40px;
     background: 50% no-repeat;
 
+    transition: opacity $tansition-speed;
+
+
+    &:hover {
+      opacity: 0.6;
+    }
+
     &--search {
       background-image: url('../img/search.svg');
     }
@@ -84,6 +91,10 @@
 
       @include onMobile {
         display: none;
+      }
+
+      &:hover {
+        opacity: 1;
       }
     }
 

@@ -50,4 +50,14 @@
       padding: 0 0 8px 0;
     }
   }
+
+  &__link {
+    color: $c-gray;
+    transition: color $tansition-speed;
+
+    &:hover {
+      cursor: pointer;
+      color: $c-medium-gray;
+    }
+  }
 }
