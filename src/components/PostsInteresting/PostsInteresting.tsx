@@ -53,7 +53,7 @@ export const PostsInteresting: React.FC<Props> = ({ searchQuery }) => {
           dataLength={posts.length}
           next={fetchData}
           hasMore={true}
-          loader={<TemplatePosts />}
+          loader={visiblePosts.length > 0 && <TemplatePosts />}
           endMessage={''}
           style={{ overflow: 'visible' }}
         >

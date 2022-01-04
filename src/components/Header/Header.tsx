@@ -85,9 +85,8 @@ export const Header: React.FC = () => (
           className='header__icon header__icon--search'
           to='/'
         />
-        <Link
+        <div
           className='header__icon header__icon--user'
-          to='/'
         />
         <Link
           className='header__icon header__icon--menu'
