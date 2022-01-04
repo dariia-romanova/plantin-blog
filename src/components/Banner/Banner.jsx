@@ -1,5 +1,5 @@
-import logo from '../../img/logo.png';
-import girl from '../../img/girl.png';
+import logo from "../../img/logo.png";
+import girl from "../../img/girl.png";
 
 export const Banner = () => {
   return (
@@ -13,15 +13,16 @@ export const Banner = () => {
           <p className="banner__subtitle">
             Get rid of limits and read everything you wish
           </p>
-          <button
-            className="banner__button"
-            type="button"
-          >
+          <button className="banner__button" type="button">
             Try For Free
           </button>
-          <img className="banner__image" src={girl} alt="girl with plants"></img>
+          <img
+            className="banner__image"
+            src={girl}
+            alt="girl with plants"
+          ></img>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

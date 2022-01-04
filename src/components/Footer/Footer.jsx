@@ -21,8 +21,8 @@ export const Footer = () => {
             </li>
           </ul>
         </nav>
-        <p>©Copyright  © 2020 PlantIn. All rights reserved</p>
+        <p>©Copyright © 2020 PlantIn. All rights reserved</p>
       </div>
     </footer>
-  )
-}
+  );
+};
