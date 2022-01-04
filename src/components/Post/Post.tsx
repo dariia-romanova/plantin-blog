@@ -21,7 +21,7 @@ export const Post: React.FC<PostType> = ({ photoId, title, minRead, date, text, 
   return (
     <article className="post">
       <a
-        href='/blog'
+        href="/plantin-blog"
         className={classNames(
           'post__content',
           {
