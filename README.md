@@ -5,11 +5,9 @@
 TECHSTACK: React/Typescript/HTML/CSS(SCSS)
 
 ## Implemented
-- App modes are fetched using endpoint http://demo1030918.mockable.io/
-- User can set app mode and create field
-- If the user hovers on the square - it turns blue
-- If the user hovers on the blue square - it turns white
-- Hovers squares are shown as a list
+- Infinite scroll for blog posts.
+- Temperature determination based on geolocation.
+- Serch by post titles and text.
 
 ## How to install
 
